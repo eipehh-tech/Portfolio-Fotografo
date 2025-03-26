@@ -1,0 +1,447 @@
+@import "variaveis/variable.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+body {
+  background-color: $bg_fundo;
+  padding: 1rem;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.divisor {
+  background-color: $bg_fundo;
+  height: 2px;
+  width: 1295px;
+  margin: auto 2rem;
+}
+
+header {
+  background-color: $gray;
+  padding: 0 1.4rem;
+  border-top-left-radius: $rounds;
+  border-top-right-radius: $rounds;
+
+  .ham-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      figure {
+        img {
+          height: 180px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .nav_links {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        a {
+          border: 1px solid $bg_fundo;
+          padding: 5px 1.2rem;
+          border-radius: $rounds;
+
+          li {
+            font-size: 20px;
+            color: $text-black;
+
+            &:hover {
+              font-size: 23px;
+              transition: 0.3s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .home {
+    background-color: $gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      font-size: 11rem;
+      color: $text-black;
+    }
+
+    h4 {
+      font-size: 3.3rem;
+      margin-top: -2rem;
+      color: $text-black;
+    }
+
+    .container_divs {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2rem 3.3rem;
+      margin: 2rem 0 4rem 0;
+
+      .container__About_us {
+        background-color: $bg_fundo;
+        border-radius: $rounds;
+        color: $text-gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 409px;
+        width: 40%;
+        padding: 1.7rem;
+
+        p {
+          font-size: 35px;
+          width: 70%;
+          text-align: left;
+        }
+
+        .About_us {
+          display: flex;
+          gap: 0.8rem;
+          align-items: center;
+          font-size: 24px;
+          cursor: pointer;
+          width: fit-content;
+          a {
+            color: $text-gray;
+          }
+
+          &:hover {
+            transition: 0.4s linear;
+            a {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .my_figure {
+        width: 52%;
+        figure {
+          display: flex;
+          justify-content: flex-end;
+          border-radius: $rounds;
+          width: 100%;
+          img {
+            width: 100%;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    background-color: $gray;
+    padding-bottom: 2rem;
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 2rem 5rem;
+
+      h2 {
+        font-size: 40px;
+        align-items: flex-start;
+        color: $text-black;
+      }
+      p {
+        width: 45%;
+        font-size: 26px;
+        color: $text-black;
+      }
+    }
+
+    .about__figures {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .img_about {
+        img {
+          height: 250px;
+          border-radius: $rounds;
+        }
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    h2 {
+      font-size: 8rem;
+      margin: 3rem auto;
+      color: $text-gray;
+    }
+    .conteiner__services {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 1.5rem;
+
+      #cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 250px;
+        width: 1250px;
+        padding: 2rem;
+        border-radius: $rounds;
+        color: $white;
+        cursor: pointer;
+        h3 {
+          font-size: 30px;
+        }
+        span {
+          font-size: 21px;
+        }
+      }
+
+      .service_01,
+      .service_02,
+      .service_03 {
+        background-position: center;
+        background-position: center;
+      }
+
+      .service_01 {
+        background-image: url(../assent/img/art\ direction.png); 
+      }
+
+      .service_03 {
+        background: url(../assent/img/photographer.png);
+      }
+
+      .service_02 {
+        background: url(../assent/img/videographer.png);
+      }
+    }
+  }
+
+  .project {
+    background-color: $gray;
+    padding: 5rem 2rem 2rem;
+
+    .divisor {
+      background-color: $bg_fundo;
+      height: 2px;
+      width: 90%;
+      margin: auto 2rem;
+    }
+    .info_project {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem;
+      h2 {
+        font-size: 40px;
+        color: $text-black;
+      }
+
+      .ancora {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        cursor: pointer;
+        a {
+          span {
+            font-size: 24px;
+            color: $text-black;
+          }
+        }
+
+        &:hover {
+          transition: 0.4s linear;
+          a {
+            span {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .figures__projects {
+      margin: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 10px;
+      justify-items: stretch;
+      margin-bottom: -23rem;
+      margin-top: 2rem;
+      grid-template-areas:
+        "Projeto_01 Projeto_02 Projeto_03"
+        "Projeto_04 Projeto_04 Projeto_05"
+        "Projeto_06 Projeto_06 Projeto_06";
+
+      .Projeto_01,
+      .Projeto_02,
+      .Projeto_03,
+      .Projeto_04,
+      .Projeto_05,
+      .Projeto_06 {
+        border-radius: $rounds;
+      }
+
+      .Projeto_01 {
+        grid-area: Projeto_01;
+        width: 100%;
+      }
+
+      .Projeto_02 {
+        grid-area: Projeto_02;
+        width: 100%;
+        height: 78%;
+      }
+
+      .Projeto_03 {
+        grid-area: Projeto_03;
+        width: 100%;
+        height: calc(80% + 5rem);
+      }
+
+      .Projeto_04 {
+        grid-area: Projeto_04;
+        margin-top: calc(-10rem + 20px);
+      }
+
+      .Projeto_05 {
+        grid-area: Projeto_05;
+        margin-top: calc(-4rem + 15px);
+        height: 66%;
+        width: 100%;
+      }
+
+      .Projeto_06 {
+        grid-area: Projeto_06;
+        width: 100%;
+        margin-top: calc(-19rem + 30px);
+      }
+    }
+  }
+}
+
+.contato {
+  background-color: $gray;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  gap: 1rem;
+  border-bottom-left-radius: $rounds;
+  border-bottom-right-radius: $rounds;
+
+  span {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 40px;
+    margin-top: -2rem;
+  }
+
+  .footer__end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .social__links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      background-color: $bg_fundo;
+      padding: 0.6rem;
+      border-radius: 15px;
+      
+      img {
+        cursor: pointer;
+      }
+    }
+    .frase {
+      background-color: $bg_fundo;
+      border-radius: 15px;
+      width: fit-content;
+      padding: 0 0.6rem;
+
+      h3 {
+        font-size: 8.8rem;
+        text-align: center;
+        color: $text-gray;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-cell-min) and (max-width: $screen-cell-max) {
+  body {
+    padding: 0.5rem;
+  }
+
+  header {
+    .ham-menu {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.26rem;
+      transition: 2s ease-in-out;
+      top: 1rem;
+      left: 0;
+      margin: 0 20px;
+
+      span {
+        width: 20px;
+        background-color: $white;
+        height: 2px;
+      }
+
+      &:active {
+        span {
+          width: 5px;
+        }
+      }
+    }
+  }
+}

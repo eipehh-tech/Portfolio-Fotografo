@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+body {
+  background-color: #1a1a1a;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.divisor {
+  background-color: #1a1a1a;
+  height: 2px;
+  width: 1295px;
+  margin: auto 2rem;
+}
+
+header {
+  background-color: #e9edc9;
+  padding: 0 1.4rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+header .ham-menu {
+  display: none;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+}
+header nav .logo figure img {
+  height: 180px;
+  cursor: pointer;
+}
+header nav .nav_links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+header nav .nav_links ul a {
+  border: 1px solid #1a1a1a;
+  padding: 5px 1.2rem;
+  border-radius: 30px;
+}
+header nav .nav_links ul a li {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+header nav .nav_links ul a li:hover {
+  font-size: 23px;
+  transition: 0.3s linear;
+}
+
+main .home {
+  background-color: #e9edc9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .home h1 {
+  font-size: 11rem;
+  color: #1a1a1a;
+}
+main .home h4 {
+  font-size: 3.3rem;
+  margin-top: -2rem;
+  color: #1a1a1a;
+}
+main .home .container_divs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3.3rem;
+  margin: 2rem 0 4rem 0;
+}
+main .home .container_divs .container__About_us {
+  background-color: #1a1a1a;
+  border-radius: 30px;
+  color: #e9edc9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 409px;
+  width: 40%;
+  padding: 1.7rem;
+}
+main .home .container_divs .container__About_us p {
+  font-size: 35px;
+  width: 70%;
+  text-align: left;
+}
+main .home .container_divs .container__About_us .About_us {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .home .container_divs .container__About_us .About_us a {
+  color: #e9edc9;
+}
+main .home .container_divs .container__About_us .About_us:hover {
+  transition: 0.4s linear;
+}
+main .home .container_divs .container__About_us .About_us:hover a {
+  text-decoration: underline;
+}
+main .home .container_divs .my_figure {
+  width: 52%;
+}
+main .home .container_divs .my_figure figure {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 30px;
+  width: 100%;
+}
+main .home .container_divs .my_figure figure img {
+  width: 100%;
+  border-radius: 30px;
+}
+main .about {
+  background-color: #e9edc9;
+  padding-bottom: 2rem;
+}
+main .about .info {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem 5rem;
+}
+main .about .info h2 {
+  font-size: 40px;
+  align-items: flex-start;
+  color: #1a1a1a;
+}
+main .about .info p {
+  width: 45%;
+  font-size: 26px;
+  color: #1a1a1a;
+}
+main .about .about__figures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+main .about .about__figures .img_about img {
+  height: 250px;
+  border-radius: 30px;
+}
+main .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+main .services h2 {
+  font-size: 8rem;
+  margin: 3rem auto;
+  color: #e9edc9;
+}
+main .services .conteiner__services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+main .services .conteiner__services #cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  width: 1250px;
+  padding: 2rem;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+main .services .conteiner__services #cards h3 {
+  font-size: 30px;
+}
+main .services .conteiner__services #cards span {
+  font-size: 21px;
+}
+main .services .conteiner__services .service_01,
+main .services .conteiner__services .service_02,
+main .services .conteiner__services .service_03 {
+  background-position: center;
+  background-position: center;
+}
+main .services .conteiner__services .service_01 {
+  background-image: url(../assent/img/art\ direction.png);
+}
+main .services .conteiner__services .service_03 {
+  background: url(../assent/img/photographer.png);
+}
+main .services .conteiner__services .service_02 {
+  background: url(../assent/img/videographer.png);
+}
+main .project {
+  background-color: #e9edc9;
+  padding: 5rem 2rem 2rem;
+}
+main .project .divisor {
+  background-color: #1a1a1a;
+  height: 2px;
+  width: 90%;
+  margin: auto 2rem;
+}
+main .project .info_project {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+main .project .info_project h2 {
+  font-size: 40px;
+  color: #1a1a1a;
+}
+main .project .info_project .ancora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+main .project .info_project .ancora a span {
+  font-size: 24px;
+  color: #1a1a1a;
+}
+main .project .info_project .ancora:hover {
+  transition: 0.4s linear;
+}
+main .project .info_project .ancora:hover a span {
+  text-decoration: underline;
+}
+main .project .figures__projects {
+  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: stretch;
+  margin-bottom: -23rem;
+  margin-top: 2rem;
+  grid-template-areas: "Projeto_01 Projeto_02 Projeto_03" "Projeto_04 Projeto_04 Projeto_05" "Projeto_06 Projeto_06 Projeto_06";
+}
+main .project .figures__projects .Projeto_01,
+main .project .figures__projects .Projeto_02,
+main .project .figures__projects .Projeto_03,
+main .project .figures__projects .Projeto_04,
+main .project .figures__projects .Projeto_05,
+main .project .figures__projects .Projeto_06 {
+  border-radius: 30px;
+}
+main .project .figures__projects .Projeto_01 {
+  grid-area: Projeto_01;
+  width: 100%;
+}
+main .project .figures__projects .Projeto_02 {
+  grid-area: Projeto_02;
+  width: 100%;
+  height: 78%;
+}
+main .project .figures__projects .Projeto_03 {
+  grid-area: Projeto_03;
+  width: 100%;
+  height: calc(80% + 5rem);
+}
+main .project .figures__projects .Projeto_04 {
+  grid-area: Projeto_04;
+  margin-top: calc(-10rem + 20px);
+}
+main .project .figures__projects .Projeto_05 {
+  grid-area: Projeto_05;
+  margin-top: calc(-4rem + 15px);
+  height: 66%;
+  width: 100%;
+}
+main .project .figures__projects .Projeto_06 {
+  grid-area: Projeto_06;
+  width: 100%;
+  margin-top: calc(-19rem + 30px);
+}
+
+.contato {
+  background-color: #e9edc9;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  gap: 1rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.contato span {
+  font-size: 40px;
+}
+.contato p {
+  font-size: 40px;
+  margin-top: -2rem;
+}
+.contato .footer__end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contato .footer__end .social__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  background-color: #1a1a1a;
+  padding: 0.6rem;
+  border-radius: 15px;
+}
+.contato .footer__end .social__links img {
+  cursor: pointer;
+}
+.contato .footer__end .frase {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0.6rem;
+}
+.contato .footer__end .frase h3 {
+  font-size: 8.8rem;
+  text-align: center;
+  color: #e9edc9;
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  body {
+    padding: 0.5rem;
+  }
+  header .ham-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.26rem;
+    transition: 2s ease-in-out;
+    top: 1rem;
+    left: 0;
+    margin: 0 20px;
+  }
+  header .ham-menu span {
+    width: 20px;
+    background-color: #fff;
+    height: 2px;
+  }
+  header .ham-menu:active span {
+    width: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */
