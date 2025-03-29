@@ -29,7 +29,7 @@ h6 {
 }
 
 header {
-  background-color: #e9edc9;
+  background-color: #e5e4e2;
   padding: 0 1.4rem;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -71,7 +71,7 @@ header nav .nav_links ul a li:hover {
 }
 
 main .home {
-  background-color: #e9edc9;
+  background-color: #e5e4e2;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -95,7 +95,7 @@ main .home .container_divs {
 main .home .container_divs .container__About_us {
   background-color: #1a1a1a;
   border-radius: 30px;
-  color: #e9edc9;
+  color: #e5e4e2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -118,7 +118,7 @@ main .home .container_divs .container__About_us .About_us {
   width: fit-content;
 }
 main .home .container_divs .container__About_us .About_us a {
-  color: #e9edc9;
+  color: #e5e4e2;
 }
 main .home .container_divs .container__About_us .About_us:hover {
   transition: 0.4s linear;
@@ -140,7 +140,7 @@ main .home .container_divs .my_figure figure img {
   border-radius: 30px;
 }
 main .about {
-  background-color: #e9edc9;
+  background-color: #e5e4e2;
   padding-bottom: 2rem;
 }
 main .about .info {
@@ -179,7 +179,7 @@ main .services {
 main .services h2 {
   font-size: 8rem;
   margin: 3rem auto;
-  color: #e9edc9;
+  color: #e5e4e2;
 }
 main .services .conteiner__services {
   display: flex;
@@ -222,7 +222,7 @@ main .services .conteiner__services .service_02 {
   background: url(../assent/img/videographer.png);
 }
 main .project {
-  background-color: #e9edc9;
+  background-color: #e5e4e2;
   padding: 5rem 2rem 2rem;
 }
 main .project .divisor {
@@ -307,7 +307,7 @@ main .project .figures__projects .Projeto_06 {
 }
 
 .contato {
-  background-color: #e9edc9;
+  background-color: #e5e4e2;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -351,7 +351,7 @@ main .project .figures__projects .Projeto_06 {
 .contato .footer__end .frase h3 {
   font-size: 8.8rem;
   text-align: center;
-  color: #e9edc9;
+  color: #e5e4e2;
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
